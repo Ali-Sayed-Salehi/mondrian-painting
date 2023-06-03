@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: black;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .red{
+      background-color: #E72F24;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .white.biggest {
+      grid-area: 1 / 2 / 2 / 5;
+    }
+
+    .white.medium-small {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .white.medium-large {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .white.vertical {
+      grid-area: 3 / 4 / 5 / 5;
+    }
+    .white.horizontal {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-area: 2 / 4 / 3 / 5;
+      border-bottom: 20px black;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .black {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="white biggest"></div>
+    <div class="white medium-small"></div>
+    <div class="white medium-large"></div>
+    <div class="blue"></div>
+    <div class="white vertical"></div>
+    <div class="white horizontal"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+</body>
+
+</html>
